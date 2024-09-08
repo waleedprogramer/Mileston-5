@@ -98,21 +98,18 @@ downloadBtn.addEventListener('click', () => {
           background-color: #f0f0f0;
           padding: 20px;
           border-radius: 10px;
+          border: 1px solid #07b7e3;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
         .section {
-          margin-top: 40%;
           background-color: #f0f0f0;
           margin: 30px;
           padding: 20px;
           border-radius: 10px;
-          border: 1px solid #07b7e3;
+          
           padding: 25px;
-          
-          
-          background: #000;
-        }
+                  }
         
         .hidden {
           display: none;
@@ -125,13 +122,13 @@ downloadBtn.addEventListener('click', () => {
         .section h2 {
           font-size: 3rem;
           color: #07b7e3;
+          border: 1px solid black;
           text-align: center;
           margin-bottom: 15px;
         }
         .section p{
           font-size: 1.5rem;
-          color: #333;
-          margin-top: 20px;
+          color:hsl(0, 0%, 90%);          margin-top: 20px;
           line-height: 1.5;
           margin-bottom: 20px;
           display: flex;
@@ -143,30 +140,31 @@ downloadBtn.addEventListener('click', () => {
           color: hsl(0, 100%, 30%);
           padding: 10px;
         }
-        span{
-          color: white;
-        }
+        span {
+          color:black;
+      }
+        
       </style>
     </head>
     <body>
     <div class="last">
       <div class="section">
         <h2>Personal Information</h2>
-        <p><strong>Full Name:</strong> ${document.getElementById('displayName')!.textContent}</p>
-        <p><strong>Email:</strong> ${document.getElementById('displayEmail')!.textContent}</p>
-        <p><strong>Phone Number:</strong> ${document.getElementById('displayPhone')!.textContent}</p>
+        <p><strong>Full Name:</strong><span> ${document.getElementById('displayName')!.textContent}</p>
+        <p><strong>Email:</strong><span> ${document.getElementById('displayEmail')!.textContent}</span></p>
+        <p><strong>Phone Number:</strong><span> ${document.getElementById('displayPhone')!.textContent}</span></p>
       </div>
       <div class="section">
         <h2>Education</h2>
-        <p>${document.getElementById('displayEducation')!.textContent}</p>
+        <p><span>${document.getElementById('displayEducation')!.textContent}</span></p>
       </div>
       <div class="section">
         <h2>Experience</h2>
-        <p>${document.getElementById('displayExperience')!.textContent}</p>
+        <p><span>${document.getElementById('displayExperience')!.textContent}</span></p>
       </div>
       <div class="section">
         <h2>Skills</h2>
-        <p>${document.getElementById('displaySkills')!.textContent}</p>
+        <p><span>${document.getElementById('displaySkills')!.textContent}</span></p>
       </div>
       </div>
     </body>
