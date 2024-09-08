@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section">
+    <div class="dynamic">
+      <h1 class="heading">Dynamic Resume <br><span>(Develope by Waleed bin Mehmood)</span></h1>
+    </div>
+    <form id="resumeForm">
+
+      <!-- Personal Info Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </fieldset>
+
+      <!-- Education Section -->
+      <fieldset>
+        <legend>Education</legend>
+        <div class="input-group">
+          <label for="education">Your Educational Background</label>
+          <textarea id="education" name="education" rows="4" required></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Experience Section -->
+      <fieldset>
+        <legend>Experience</legend>
+        <div class="input-group">
+          <label for="experience">Your Work Experience</label>
+          <textarea id="experience" name="experience" rows="4" required></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Skills Section -->
+      <fieldset>
+        <legend>Skills</legend>
+        <div class="input-group">
+          <label for="skills">Your Skills</label>
+          <textarea id="skills" name="skills" rows="4" required></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Generate</button>
+    </form>
+  </div>
+<!-- Section to display submitted information -->
+<!-- Section to display submitted information -->
+<div class="last">
+  <div id="displayInfo" class="hidden">
+    <h2>Submitted Information</h2>
+    <p><strong>Full Name:</strong> <span id="displayName"></span> <button class="edit-btn" data-target="name">Edit</button></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span> <button class="edit-btn" data-target="email">Edit</button></p>
+    <p><strong>Phone Number:</strong> <span id="displayPhone"></span> <button class="edit-btn" data-target="phone">Edit</button></p>
+    <p><strong>Education:</strong> <span id="displayEducation"></span> <button class="edit-btn" data-target="education">Edit</button></p>
+    <p><strong>Experience:</strong> <span id="displayExperience"></span> <button class="edit-btn" data-target="experience">Edit</button></p>
+    <p><strong>Skills:</strong> <span id="displaySkills"></span> <button class="edit-btn" data-target="skills">Edit</button></p>
+    <button id="downloadBtn" class="btn hidden">Download Resume</button>
+  </div>
+</div>
+
+
+
+
+    
+  </section>
+  <script src="script.js" type="module"></script>
+
+</body>
+</html>
